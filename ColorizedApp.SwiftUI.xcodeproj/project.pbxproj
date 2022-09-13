@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E005136A28D1194800C3B4D2 /* RandomValueSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E005136928D1194800C3B4D2 /* RandomValueSetter.swift */; };
 		E08950B528CF5F3F0077601E /* ColorizedApp_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08950B428CF5F3F0077601E /* ColorizedApp_SwiftUIApp.swift */; };
 		E08950B728CF5F3F0077601E /* ColorizedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08950B628CF5F3F0077601E /* ColorizedView.swift */; };
 		E08950B928CF5F410077601E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E08950B828CF5F410077601E /* Assets.xcassets */; };
 		E08950BC28CF5F410077601E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E08950BB28CF5F410077601E /* Preview Assets.xcassets */; };
 		E08950C328D099FD0077601E /* TextField + BorderedViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08950C228D099FD0077601E /* TextField + BorderedViewModifier.swift */; };
-		E08950C828D0D8C00077601E /* RandomValueSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08950C728D0D8C00077601E /* RandomValueSetter.swift */; };
 		E08950CA28D0F03B0077601E /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08950C928D0F03B0077601E /* ColorView.swift */; };
 		E08950CC28D0F0FD0077601E /* ColorSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08950CB28D0F0FD0077601E /* ColorSliderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E005136928D1194800C3B4D2 /* RandomValueSetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RandomValueSetter.swift; path = ../RandomValueSetter.swift; sourceTree = "<group>"; };
 		E08950B128CF5F3F0077601E /* ColorizedApp.SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorizedApp.SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E08950B428CF5F3F0077601E /* ColorizedApp_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizedApp_SwiftUIApp.swift; sourceTree = "<group>"; };
 		E08950B628CF5F3F0077601E /* ColorizedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizedView.swift; sourceTree = "<group>"; };
 		E08950B828CF5F410077601E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E08950BB28CF5F410077601E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E08950C228D099FD0077601E /* TextField + BorderedViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField + BorderedViewModifier.swift"; sourceTree = "<group>"; };
-		E08950C728D0D8C00077601E /* RandomValueSetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomValueSetter.swift; sourceTree = "<group>"; };
 		E08950C928D0F03B0077601E /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		E08950CB28D0F0FD0077601E /* ColorSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,8 +81,8 @@
 		E08950C428D09A010077601E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E005136928D1194800C3B4D2 /* RandomValueSetter.swift */,
 				E08950C228D099FD0077601E /* TextField + BorderedViewModifier.swift */,
-				E08950C728D0D8C00077601E /* RandomValueSetter.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 				E08950B728CF5F3F0077601E /* ColorizedView.swift in Sources */,
 				E08950B528CF5F3F0077601E /* ColorizedApp_SwiftUIApp.swift in Sources */,
 				E08950CC28D0F0FD0077601E /* ColorSliderView.swift in Sources */,
-				E08950C828D0D8C00077601E /* RandomValueSetter.swift in Sources */,
+				E005136A28D1194800C3B4D2 /* RandomValueSetter.swift in Sources */,
 				E08950CA28D0F03B0077601E /* ColorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
