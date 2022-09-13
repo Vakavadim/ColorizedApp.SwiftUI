@@ -10,11 +10,9 @@ import SwiftUI
 @main
 struct ColorizedApp_SwiftUIApp: App {
     
-    @StateObject var randomSetter = RandomValueSette()
-    
     var body: some Scene {
         WindowGroup {
-            ColorizedView().environmentObject(randomSetter)
+            ColorizedView()
         }
     }
 }

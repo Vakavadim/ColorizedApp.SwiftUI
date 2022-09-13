@@ -22,8 +22,9 @@ struct ColorSliderView: View {
                 .onChange(of: value) {
                     textValue = "\(lround($0))"
                 }
-            TextField("", text: $textValue)
+            TextField(String(lround(value)), text: $textValue)
                 .bordered()
+                .foregroundColor(.black)
                 .keyboardType(.decimalPad)
                 .multilineTextAlignment(.trailing)
                 .onChange(of: textValue) {

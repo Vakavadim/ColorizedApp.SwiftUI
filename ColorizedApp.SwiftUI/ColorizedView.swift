@@ -7,29 +7,20 @@
 
 import SwiftUI
 
-// Алексей, дико извиняюсь, у проблемы c life-cycle и архетиктурой. Я бы хотел инициализировать следующие три свойства во внешнем классе, но пока инциализировать класс выше не удалось. Понимаю, что существует элегантное решение, где можно обойтись без костылей, но я этого решения не нашел. Отправляю как есть времени больше нет. Буду исправляться (
-
-let randomRedValue = Double.random(in: 0...255)
-let randomGreenValue = Double.random(in: 0...255)
-let randomBlueValue = Double.random(in: 0...255)
-
-
 struct ColorizedView: View {
-
-//    @EnvironmentObject var randomSetter: RandomValueSette
     
     enum FocusedField {
         case red, green, blue
     }
     @State private var alertPresented = false
     
-    @State private var redSliderValue = randomRedValue
-    @State private var greenSliderValue = randomGreenValue
-    @State private var blueSliderValue = randomBlueValue
+    @State private var redSliderValue = Double.random(in: 0...255)
+    @State private var greenSliderValue = Double.random(in: 0...255)
+    @State private var blueSliderValue = Double.random(in: 0...255)
     
-    @State private var redValueString = "\(lround(randomRedValue))"
-    @State private var greenValueString = "\(lround(randomGreenValue))"
-    @State private var blueValueString = "\(lround(randomBlueValue))"
+    @State private var redValueString = ""
+    @State private var greenValueString = ""
+    @State private var blueValueString = ""
 
     @FocusState var redTextFieldFocused: Bool
     @FocusState var greenTextFieldFocused: Bool
