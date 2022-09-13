@@ -7,6 +7,29 @@
 
 import SwiftUI
 
+/* Алексей, здраствуйте.
+ 
+ У меня проблемы c life-cycle и архетиктурой.
+ Я бы хотел инициализировать следующие три свойства во внешнем классе и применять к SliderValue и redValueString, но пока инциализировать внешний класс с данными в singl view app не удается.
+ 
+ let randomRedValue = Double.random(in: 0...255)
+ let randomGreenValue = Double.random(in: 0...255)
+ let randomBlueValue = Double.random(in: 0...255)
+ 
+ пробовал @ObservedObject / @EnvironmentObject и Singlton.
+ Всегда проблема  initializers run before 'self' is available
+ 
+ Отправлять решение с размещением свойств вне области структур не стал, хотя так и работало(
+ 
+ Понимаю, что существует элегантное решение, где можно обойтись без костылей и внешних классах, но я этого решения не нашел.
+
+ Буду передавать значение в placeholder
+ 
+ Думал поменять цвет placeholder на черный, но API на параметр нет, там тоже костыли =)
+ Вот как то так(
+
+ */
+ 
 struct ColorizedView: View {
     
     enum FocusedField {
@@ -51,17 +74,17 @@ struct ColorizedView: View {
             endEditing()
         }
         .toolbar {
-            ToolbarItemGroup(placement: ToolbarItemPlacement.keyboard) {
-                Button(action: previusTextField) {
-                    Image(systemName: "chevron.up")
-                }
-                Button(action: nextTextField) {
-                    Image(systemName: "chevron.down")
-                }
-                Spacer()
-                Button(action: endEditing) {
-                    Text("Done")
-                }
+                ToolbarItemGroup(placement: ToolbarItemPlacement.keyboard) {
+                    Button(action: previusTextField) {
+                        Image(systemName: "chevron.up")
+                    }
+                    Button(action: nextTextField) {
+                        Image(systemName: "chevron.down")
+                    }
+                    Spacer()
+                    Button(action: endEditing) {
+                        Text("Done")
+                    }
             }
         }
     }
@@ -78,7 +101,6 @@ struct ColorizedView: View {
                 currentFocus = .blue
             }
         }
-        
         return currentFocus
     }
     

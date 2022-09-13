@@ -12,11 +12,6 @@ struct BorderedViewModifier: ViewModifier  {
         content
             .frame(width: 40, height: 10, alignment: .trailing)
             .padding(EdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8))
-//            .overlay(
-//                RoundedRectangle(cornerRadius: 4)
-//                    .stroke(lineWidth: 1)
-//                    .foregroundColor(.gray)
-//            )
             .background(.white)
             .cornerRadius(4)
             .shadow(color: Color.gray.opacity(0.2), radius: 3, x: 1, y: 2)
