@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E07D7EE328D3CCF8005B8295 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07D7EE228D3CCF8005B8295 /* TextFieldView.swift */; };
 		E08950B528CF5F3F0077601E /* ColorizedApp_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08950B428CF5F3F0077601E /* ColorizedApp_SwiftUIApp.swift */; };
 		E08950B728CF5F3F0077601E /* ColorizedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08950B628CF5F3F0077601E /* ColorizedView.swift */; };
 		E08950B928CF5F410077601E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E08950B828CF5F410077601E /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E07D7EE228D3CCF8005B8295 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		E08950B128CF5F3F0077601E /* ColorizedApp.SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorizedApp.SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E08950B428CF5F3F0077601E /* ColorizedApp_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizedApp_SwiftUIApp.swift; sourceTree = "<group>"; };
 		E08950B628CF5F3F0077601E /* ColorizedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizedView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				E08950B428CF5F3F0077601E /* ColorizedApp_SwiftUIApp.swift */,
 				E08950B628CF5F3F0077601E /* ColorizedView.swift */,
 				E08950CB28D0F0FD0077601E /* ColorSliderView.swift */,
+				E07D7EE228D3CCF8005B8295 /* TextFieldView.swift */,
 				E08950C928D0F03B0077601E /* ColorView.swift */,
 				E08950C428D09A010077601E /* Helpers */,
 				E08950B828CF5F410077601E /* Assets.xcassets */,
@@ -156,6 +159,7 @@
 			files = (
 				E08950C328D099FD0077601E /* TextField + BorderedViewModifier.swift in Sources */,
 				E08950B728CF5F3F0077601E /* ColorizedView.swift in Sources */,
+				E07D7EE328D3CCF8005B8295 /* TextFieldView.swift in Sources */,
 				E08950B528CF5F3F0077601E /* ColorizedApp_SwiftUIApp.swift in Sources */,
 				E08950CC28D0F0FD0077601E /* ColorSliderView.swift in Sources */,
 				E08950CA28D0F03B0077601E /* ColorView.swift in Sources */,

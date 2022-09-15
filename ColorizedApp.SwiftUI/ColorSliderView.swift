@@ -8,32 +8,35 @@
 import SwiftUI
 
 struct ColorSliderView: View {
-    let color: Color
-    @Binding var alertPresented: Bool
+    
     @Binding var value: Double
-    @Binding var textValue: String
+    @State private var text = ""
+    
+    let color: Color
     
     var body: some View {
         HStack {
-            Text("\(lround(value))")
+            Text(value.formatted())
                 .foregroundColor(.white)
-            Slider(value: $value, in: 0...255)
+            Slider(value: $value, in: 0...255, step: 1)
                 .tint(color)
-                .onChange(of: value) {
-                    textValue = "\(lround($0))"
+                .onChange(of: value) { newValue in
+                    text = value.formatted()
                 }
-            TextField(String(lround(value)), text: $textValue)
-                .bordered()
-                .foregroundColor(.black)
-                .keyboardType(.decimalPad)
-                .multilineTextAlignment(.trailing)
-                .onChange(of: textValue) {
-                    if Double(textValue) != nil && Double(textValue)! <= 255 {
-                        self.value = Double($0)!
-                    } else {
-                        alertPresented = true
-                    }
-                }
+            TextFieldView(text: $text, value: $value)
+        }
+        .onAppear {
+            text = value.formatted()
         }
     }
 }
+
+struct ColorSlider_Previews: PreviewProvider {
+    static var previews: some View {
+        ZStack {
+            Color.gray
+            ColorSliderView(value: .constant(100), color: .red)
+        }
+    }
+}
+
